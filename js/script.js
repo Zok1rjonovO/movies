@@ -90,7 +90,7 @@ function renderFunc(array, element){
             let h3 = select("h3", cloneTemplateModal);
             let p = select("p", cloneTemplateModal);
             
-            iframe.src = foundFilm.link;
+            iframe.href = foundFilm.link;
             h2.textContent = foundFilm.Title;
             h3.textContent = `Genres: ${foundFilm.genres.join(", ")}`;
             p.textContent = foundFilm.overview;
